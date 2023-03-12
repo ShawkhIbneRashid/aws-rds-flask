@@ -1,0 +1,39 @@
+{% extends "base.html" %} 
+{% block title %}House Rental Charts{% endblock %} 
+{% block content %} 
+<div class="content-wrapper">
+  <div class="row">
+	<div class="col-md-12 grid-margin">
+   <h2 class="font-weight-bold">Apartment Rent Graphs</h2>
+      
+        <div class="row">
+          <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+			
+			<div class="sectiontitle">
+			<p class = "par-custom">
+				This page shows the average apartment rents of New York and Chicago from 2015 to 2020.</p>
+			</div>
+
+          </div>
+        </div>
+      </div>
+    <div class="col-lg-6 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Line chart</h4>
+          <canvas id="lineChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Bar chart</h4>
+          <canvas id="barChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+{% endblock %} 
+
